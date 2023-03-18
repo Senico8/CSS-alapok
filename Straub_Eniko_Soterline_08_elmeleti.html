@@ -1,0 +1,109 @@
+Mi a CSS?​
+
+a) A weboldalak stílusát, kinézetét leíró nyelv.​
+
+​
+
+Hogyan formázza át a weboldal kinézetét a következő CSS szabály?body{background-color:black; }​
+
+a) A teljes dokumentum háttérszíne fekete.​
+
+​
+
+Mire illeszkedik az a CSS szabály, amelynek szelektora: „p.kiemelt{...}”?​
+
+b) Minden <p class="kiemelt"> elemre.​
+
+
+A(z) ...... stílusleíró nyelv, amely a weboldalak megjelenését írja le. Válassza ki, melyik a mondathelyes kiegészítése!​
+
+d) CSS​
+
+​
+
+Hogyan formázza át a weboldal kinézetét a következő CSS szabály? p{font-size:18px; }​
+
+c) Minden <p> bekezdés betűmérete 18 pixel.​
+​
+
+Miért fontos a weboldalon beillesztett képekhez helyettesítő szöveg megadása?​
+
+b) Informálja a felhasználót a kép tartalmáról, ha valamilyen ok miatt a kép nem jeleníthető meg,de fontos szerepe van a keresésnél is.​
+
+
+Mire illeszkedik az a CSS szabály, amelynek szelektora: „.kiemelt p{...}”?​
+
+a) Minden olyan <p> elemre, amely olyan elemen belül található, amelynek "class" jellemzője"kiemelt".​
+
+Mik azok a pszeudo osztályok? Mondj néhány példát.
+    A pszeudo-osztályokkal a "változható" elemek pl. "változás utáni" tulajdonságait tudjuk megadni. Például egy hivatkozásnál a szöveg alapszínét, ami megváltozik, ha már meglátogattuk azt a linket,vagy ha fölé visszük a kurzort.
+    pl: :hover, :visited
+
+    Hogyan hivatkozol a következő kódban, ha a példa szöveget szeretnéd fehér színben megjeleníteni?​
+
+    <div class=“container”>​
+    
+    <div id=“box”>​
+    
+    <p> <b class=“txt”>EXAMPLE TEXT</b> </p>​
+    
+    </div>​
+    
+    </div>
+
+    ​hivatkozás: 
+
+    .txt{
+        color:#fff
+    }
+
+    Az alábbi példában szeretném hogy a dobozok a containeren belül egymás mellett legyenek. ​
+    
+    Mivel kell kiegészítenem a stílus parancsom?​
+    
+    <div class=“container” style=“………”>​
+    
+    <div id=“box” style=“width: 300px; height: 300px;”> </div>​
+    
+    <div id=“box” style=“width: 300px; height: 300px;”> </div>​
+    
+    </div>​
+    
+    ​kiegészítés: style="display: flex"
+    
+    Mi az az Flexbox?​
+    
+    Az elemek sorban vagy oszlopban történő elrendezésére szolgál, ahol a ​megjelenítő eszköz képernyőjéhez rugalmasan tudja kitölteni a helyet.
+    
+    Mi az a Grid?​
+    
+    ​Az elemeket rugalmasan tudja elhelyezni a megjelenítő készülék képernyőjén, a megadott paramétereknek megfelelően.
+    
+    Mi az a parancs, amivel a grid értékei között egyszerre lehet ugyan akkora térközt tenni?​
+    
+    gap: 10 px
+
+    Mit jelent a következő? “style=“display: flex; justify-content: center;”​
+
+    Az elemeket középre, egymás mellé fogja rendezni, de rugalmasan, ha az oldal szélessége azt követeli meg, egymás alá, középre helyeződnek.
+
+Definiáld: reszponzivitás.​
+
+​Bármilyen eszközön (laptop, tablet, telefon) tekintik meg a weboldalt, biztosított annak az optimális megjelenítése.
+
+Miért fontos a reszponzivitás?​
+
+​Mert pl. nem ugyanarra a betű- vagy képméretre van szükségünk a monitoron és a telefon képernyőjén. A felhasználóbarát megoldás nagyon fontos, hogy egyforma feltételeket biztosítsunk mindenkinek, bárhol is nyitja meg az oldalt.
+
+Mi az a mobile-first?​
+
+​Az a szemlélet, hogy elsősorban mobilra optimalizáljuk a weboldal megjelését, mivel a felhasználók igen nagy százaléka ott fogja megtekinteni.
+
+Hol és hogyan hivatkozunk, akkor ha szeretnénk kialakítani a reszponziv nézetet? Írj egy példát is.​
+
+​CSS-ben: @media screen and (max-width: 360px) { 
+    ebben a részben megadott stílusok fognak érvényesülni minden készüléken, aminek a képernyője 360px vagy kisebb szélességű.
+} 
+
+Hány töréspont a javallott 2440px és 360px szélesség között?
+Három: 1940px, 900px, 600px
